@@ -1,0 +1,1328 @@
+/*====================================================
+            GOOGLE FONT & RESET
+=====================================================*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+
+    --bg:#F8F3E7;
+    --white:#FFFDF8;
+    --green:#1B5E20;
+    --green2:#4C6B3C;
+    --gold:#D4A017;
+    --text:#2B3528;
+    --light:#EFE8D8;
+    --border:#E7DDC8;
+    --shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+/*=========================
+RESET
+==========================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#FAF8F3;
+    padding-top:95px;
+}
+
+/*=========================
+NAVBAR
+==========================*/
+
+.navbar{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:95px;
+
+    background:#FDFBF6;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 55px;
+
+    box-shadow:0 2px 15px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+/* Logo */
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:16px;
+
+}
+
+.logo img{
+
+    width:58px;
+    height:58px;
+
+    border-radius:50%;
+    object-fit:cover;
+
+}
+
+.logo-text{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+.logo-text h2{
+
+    color:#165B2B;
+    font-size:28px;
+    letter-spacing:2px;
+    font-weight:700;
+    line-height:1;
+
+}
+
+.logo-text p{
+
+    margin-top:6px;
+    color:#7C756A;
+    font-size:14px;
+
+}
+
+/* Menu */
+
+nav ul{
+
+    display:flex;
+    align-items:center;
+    gap:38px;
+
+    list-style:none;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+    color:#555;
+
+    font-size:18px;
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#165B2B;
+
+}
+
+/* Active Button */
+
+nav ul li a.active{
+
+    background:#E8EEDB;
+
+    color:#165B2B;
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    position:relative;
+
+    font-weight:600;
+
+}
+
+nav ul li a.active::after{
+
+    content:"";
+
+    width:8px;
+    height:8px;
+
+    background:#165B2B;
+
+    border-radius:50%;
+
+    position:absolute;
+
+    left:50%;
+    bottom:-14px;
+
+    transform:translateX(-50%);
+
+}
+
+/* Right */
+
+.nav-right{
+
+    display:flex;
+    align-items:center;
+    gap:24px;
+
+}
+
+.nav-right i{
+
+    font-size:26px;
+    color:#666;
+    cursor:pointer;
+    transition:.3s;
+
+}
+
+.nav-right i:hover{
+
+    color:#165B2B;
+
+}
+
+/* Sign In */
+
+.signin{
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:150px;
+    height:50px;
+
+    border-radius:35px;
+
+    border:1px solid #C8D8C4;
+
+    background:#fff;
+
+    color:#165B2B;
+
+    font-size:18px;
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.signin i{
+
+    font-size:18px;
+    color:#165B2B;
+
+}
+
+.signin:hover{
+
+    background:#165B2B;
+    color:#fff;
+
+}
+
+.signin:hover i{
+
+    color:#fff;
+
+}
+
+
+/*====================================================
+                    HERO
+=====================================================*/
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    padding: 0 8%;
+}
+
+/* Video Background */
+.hero-bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+}
+
+.hero-bg video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Dark Overlay */
+.overlay{
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    z-index: -1;
+}
+
+/* Hero Content */
+
+.hero-content{
+
+    width:650px;
+
+    color:white;
+
+}
+
+.tag{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:16px;
+
+    color:var(--gold);
+
+    font-size:15px;
+
+    letter-spacing:4px;
+
+    margin-bottom:30px;
+
+    font-weight:600;
+
+}
+
+.tag hr{
+
+    width:60px;
+
+    border:1px solid var(--gold);
+
+}
+
+.hero h1{
+
+    font-size:82px;
+
+    line-height:1.05;
+
+    font-weight:700;
+
+    margin-bottom:30px;
+
+    font-family:Georgia,serif;
+
+}
+
+.hero h1 span{
+
+    color:var(--gold);
+
+    font-style:italic;
+
+}
+
+.hero p{
+
+    font-size:23px;
+
+    line-height:1.7;
+
+    color:#ECECEC;
+
+    margin-bottom:40px;
+
+}
+
+/* Hero Buttons */
+
+.hero-btn{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    margin-top:45px;
+}
+
+.hero-btn a{
+    text-decoration:none;
+    font-size:20px;
+    font-weight:600;
+    border-radius:50px;
+    transition:0.3s ease;
+}
+
+/* Explore Button */
+
+.btn1{
+    background:#D9A520;
+    color:#111;
+    padding:18px 42px;
+    border:2px solid #D9A520;
+}
+
+.btn1:hover{
+    background:#C79214;
+    border-color:#C79214;
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+/* Join Membership */
+
+.btn2{
+    background:transparent;
+    color:#fff;
+    padding:18px 42px;
+    border:2px solid rgba(255,255,255,0.6);
+}
+
+.btn2:hover{
+    background:#fff;
+    color:#1B5E20;
+    border-color:#fff;
+    transform:translateY(-3px);
+}
+
+
+/* Bottom Text */
+
+.hero-bottom{
+
+    display:flex;
+
+    gap:40px;
+
+    margin-top:50px;
+
+    color:#DADADA;
+
+    font-size:15px;
+
+}
+
+/* Scroll */
+
+.scroll{
+
+    position:absolute;
+
+    bottom:35px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:white;
+
+    text-align:center;
+
+}
+
+.scroll i{
+
+    font-size:26px;
+
+    margin-bottom:10px;
+
+}
+
+.scroll p{
+
+    font-size:12px;
+
+    letter-spacing:3px;
+
+}
+
+/* WhatsApp */
+
+.chat{
+
+    position:fixed;
+
+    right:30px;
+
+    bottom:30px;
+
+    width:65px;
+
+    height:65px;
+
+    border-radius:50%;
+
+    background:var(--green);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:white;
+
+    font-size:28px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    cursor:pointer;
+
+    z-index:999;
+
+    transition:.35s;
+
+}
+
+.chat:hover{
+
+    transform:scale(1.08);
+
+}
+
+/*====================================================
+                    FEATURES
+=====================================================*/
+
+.features{
+
+    background:var(--white);
+
+    padding:45px 8%;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:20px;
+
+}
+
+.feature{
+
+    text-align:center;
+
+    transition:.3s;
+
+}
+
+.feature:hover{
+
+    transform:translateY(-6px);
+
+}
+
+/* Circle */
+
+.icon{
+
+    width:70px;
+
+    height:70px;
+
+    margin:auto;
+
+    margin-bottom:16px;
+
+    border-radius:50%;
+
+    background:#EEF6EC;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    border:2px solid #D8E9D8;
+
+}
+
+.icon i{
+
+    font-size:28px;
+
+    color:var(--green);
+
+}
+
+.feature h4{
+
+    font-size:17px;
+
+    color:var(--text);
+
+    font-weight:600;
+
+}
+/*====================================================
+            PREMIUM PRODUCT RANGE
+=====================================================*/
+
+.products{
+
+    padding:90px 8%;
+
+    background:var(--bg);
+
+}
+
+.title{
+
+    text-align:center;
+
+    margin-bottom:55px;
+
+}
+
+.title h2{
+
+    font-size:46px;
+
+    color:var(--text);
+
+    font-family:Georgia,serif;
+
+    margin-bottom:12px;
+
+}
+
+.title p{
+
+    color:#666;
+
+    font-size:17px;
+
+}
+
+/* Product Grid */
+
+.product-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+    align-items:stretch;
+
+}
+
+/* Card */
+
+.card{
+
+    background:var(--white);
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.06);
+
+    transition:.35s;
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+/* Image */
+
+.product-img{
+
+    height:260px;
+
+    background:#F6F0E3;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+}
+
+.product-img img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+    transition:.4s;
+
+}
+
+.card:hover .product-img img{
+
+    transform:scale(1.06);
+
+}
+
+.card h3{
+
+    padding:18px;
+
+    text-align:center;
+
+    color:var(--text);
+
+    font-size:22px;
+
+    font-weight:600;
+
+}
+
+/*====================================================
+                BEST SELLERS
+=====================================================*/
+
+.best{
+
+    padding:90px 8%;
+
+    background:var(--white);
+
+}
+
+.best-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+/* Card */
+
+.best-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    height:100%;
+
+}
+
+.best-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+/* Premium Badge */
+
+.best-card .tag{
+
+    position:absolute;
+
+    top:18px;
+
+    left:18px;
+
+    background:var(--gold);
+
+    color:black;
+
+    padding:6px 14px;
+
+    border-radius:20px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    letter-spacing:0;
+
+}
+
+/* Wishlist */
+
+.wish{
+
+    position:absolute;
+
+    top:18px;
+
+    right:18px;
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.wish:hover{
+
+    background:var(--green);
+
+    color:white;
+
+}
+
+/* Product Image */
+
+.best-card .product-img{
+
+    height:290px;
+
+    background:#F6F0E3;
+
+}
+
+.best-card .product-img img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:contain;
+
+}
+
+/* Product Info */
+
+.info{
+
+    padding:22px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    flex-grow:1;
+
+}
+
+.info h3{
+
+    font-size:23px;
+
+    color:var(--text);
+
+    margin-bottom:10px;
+
+}
+
+/* Rating */
+
+.info p{
+
+    color:#D4A017;
+
+    margin-bottom:12px;
+
+    font-size:15px;
+
+}
+
+/* Price */
+
+.info h2{
+
+    color:var(--green);
+
+    font-size:30px;
+
+    margin-bottom:22px;
+
+}
+
+.info h2 span{
+
+    color:#888;
+
+    text-decoration:line-through;
+
+    font-size:17px;
+
+    margin-left:8px;
+
+}
+
+/* Button */
+
+.info button{
+
+    margin-top:auto;
+
+    width:100%;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:var(--green);
+
+    color:white;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.info button:hover{
+
+    background:var(--green2);
+
+}
+
+/* View Products Button */
+
+.view-btn{
+
+    text-align:center;
+
+    margin-top:45px;
+
+}
+
+.view-btn a{
+
+    display:inline-block;
+
+    padding:14px 35px;
+
+    border:2px solid var(--green);
+
+    color:var(--green);
+
+    border-radius:35px;
+
+    transition:.35s;
+
+    font-weight:600;
+
+}
+
+.view-btn a:hover{
+
+    background:var(--green);
+
+    color:white;
+
+}
+/*====================================================
+                SUBSCRIPTION PLANS
+=====================================================*/
+
+.plans{
+    padding:90px 8%;
+    background:var(--bg);
+}
+
+.plan-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:35px;
+}
+
+.plan{
+    background:var(--white);
+    border-radius:22px;
+    padding:40px 30px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    border:2px solid transparent;
+}
+
+.plan:hover{
+    transform:translateY(-10px);
+}
+
+.plan.active{
+    border:3px solid var(--green);
+    transform:scale(1.05);
+}
+
+.plan h3{
+    color:var(--green);
+    font-size:26px;
+    margin-bottom:18px;
+}
+
+.plan h2{
+    color:var(--text);
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.plan h2 span{
+    font-size:18px;
+    color:#777;
+}
+
+.plan ul{
+    margin:25px 0;
+}
+
+.plan ul li{
+    margin:15px 0;
+    color:#555;
+    font-size:16px;
+}
+
+.plan ul li::before{
+    content:"✔ ";
+    color:var(--green);
+    font-weight:bold;
+}
+
+.plan button{
+    width:100%;
+    height:50px;
+    border:none;
+    border-radius:30px;
+    background:var(--green);
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.plan button:hover{
+    background:var(--green2);
+}
+
+/*====================================================
+                    CTA
+=====================================================*/
+
+.cta{
+    padding:100px 8%;
+    background:linear-gradient(135deg,var(--green),var(--green2));
+    color:white;
+    text-align:center;
+}
+
+.cta h2{
+    font-size:48px;
+    margin-bottom:20px;
+    font-family:Georgia,serif;
+}
+
+.cta p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:40px;
+}
+
+.cta a{
+    display:inline-block;
+    padding:18px 40px;
+    background:var(--gold);
+    color:black;
+    border-radius:35px;
+    font-weight:600;
+    transition:.3s;
+    box-shadow:0 10px 25px rgba(212,160,23,.35);
+    
+    text-decoration: none;
+
+}
+
+.cta a:hover{
+    background:white;
+    transform:translateY(-4px);
+}
+
+/*====================================================
+                    FOOTER
+=====================================================*/
+
+footer{
+    background:#243022;
+    color:#F5F5F5;
+    padding:80px 8%;
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr 1.5fr;
+    gap:40px;
+}
+
+/* Logo */
+
+.footer-logo{
+    width:90px;
+    height:90px;
+    margin-bottom:20px;
+    overflow:hidden;
+}
+
+.footer-logo img{
+    width:100%;
+    height:100%;
+    object-fit:contain;
+}
+
+.footer-box h3{
+    color:var(--gold);
+    margin-bottom:25px;
+    font-size:22px;
+}
+
+.footer-box p{
+    line-height:1.8;
+    color:#D9D9D9;
+    margin-bottom:12px;
+}
+
+.footer-box a{
+    display:block;
+    color:#D9D9D9;
+    margin-bottom:14px;
+    transition:.3s;
+}
+
+.footer-box a:hover{
+    color:var(--gold);
+    padding-left:5px;
+}
+
+/* Newsletter */
+
+.subscribe{
+    display:flex;
+    margin-top:20px;
+}
+
+.subscribe input{
+    flex:1;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:30px 0 0 30px;
+    background:white;
+}
+
+.subscribe button{
+    border:none;
+    background:var(--gold);
+    color:black;
+    padding:14px 22px;
+    border-radius:0 30px 30px 0;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.subscribe button:hover{
+    background:#C99710;
+}
+
+/*====================================================
+                RESPONSIVE
+=====================================================*/
+
+@media(max-width:1200px){
+
+.product-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+.best-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+.plan-container{
+grid-template-columns:repeat(2,1fr);
+}
+
+.features{
+grid-template-columns:repeat(3,1fr);
+}
+
+footer{
+grid-template-columns:repeat(2,1fr);
+}
+
+.hero h1{
+font-size:65px;
+}
+
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+height:auto;
+padding:20px;
+gap:20px;
+}
+
+.logo{
+flex-direction:column;
+}
+
+nav ul{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.hero{
+padding:140px 20px 80px;
+height:auto;
+}
+
+.hero-content{
+width:100%;
+text-align:center;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.hero-btn{
+flex-direction:column;
+align-items:center;
+}
+
+.hero-bottom{
+flex-direction:column;
+gap:12px;
+}
+
+.scroll{
+display:none;
+}
+
+.features,
+.product-container,
+.best-container,
+.plan-container,
+footer{
+grid-template-columns:1fr;
+}
+
+.title h2{
+font-size:34px;
+}
+
+.cta h2{
+font-size:36px;
+}
+
+.subscribe{
+flex-direction:column;
+gap:15px;
+}
+
+.subscribe input,
+.subscribe button{
+border-radius:30px;
+width:100%;
+}
+
+}
+
+@media(max-width:500px){
+
+.hero h1{
+font-size:38px;
+}
+
+.logo-text h2{
+font-size:24px;
+}
+
+.title h2{
+font-size:30px;
+}
+
+.card h3,
+.info h3{
+font-size:20px;
+}
+
+.plan h2{
+font-size:34px;
+}
+
+}
