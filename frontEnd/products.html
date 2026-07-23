@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Products - Poorna Sattva</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <section class="products-section">
+        <div class="products-header">
+            <h2>Premium Dairy Products</h2>
+            <div class="cart-container">
+                <button class="cart-btn" id="cartBtn">
+                    🛒 <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+            </div>
+        </div>
+
+        <p class="section-subtitle">
+            Discover our complete range of organic, pure farm-fresh dairy products
+        </p>
+
+        <div class="tab-container">
+            <button class="tab-btn active" onclick="filterCategory('all')">All Products</button>
+            <button class="tab-btn" onclick="filterCategory('milk')">Milk</button>
+            <button class="tab-btn" onclick="filterCategory('ghee')">Ghee</button>
+            <button class="tab-btn" onclick="filterCategory('paneer')">Paneer</button>
+            <button class="tab-btn" onclick="filterCategory('curd')">Curd</button>
+            <button class="tab-btn" onclick="filterCategory('butter')">Butter</button>
+            <button class="tab-btn" onclick="filterCategory('buttermilk')">Buttermilk</button>
+            <button class="tab-btn" onclick="filterCategory('cheese')">Cheese</button>
+        </div>
+
+        <div class="product-grid" id="productGrid">
+
+          
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
