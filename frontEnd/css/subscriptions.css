@@ -1,0 +1,375 @@
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f3e8;
+    color:#213022;
+}
+
+/* HERO */
+
+.hero{
+    text-align:center;
+    padding:60px 20px 40px;
+}
+
+.hero h1{
+    font-size:64px;
+    font-weight:700;
+    margin-bottom:18px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#666;
+    line-height:1.6;
+}
+
+/* MEMBERSHIP CARDS */
+
+.plans{
+    width:90%;
+    margin:auto;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+    padding-bottom:70px;
+}
+
+/* CARD */
+
+.card{
+    width:320px;
+    background:#fff;
+    border-radius:28px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,.08);
+    transition:.35s;
+    border:4px solid transparent;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+/* GOLD CARD */
+
+.gold{
+    border:4px solid #176d2f;
+}
+
+/* SILVER & PREMIUM */
+
+.silver:hover,
+.premium:hover{
+    border-color:#176d2f;
+}
+
+/* CARD TOP */
+
+.card-top{
+    height:160px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* Silver */
+
+.silver .card-top{
+    background:#f4f4f4;
+}
+
+.silver .card-top i{
+    font-size:70px;
+    color:#9ea3a9;
+    text-size-adjust: center;
+}
+
+/* Remove Badge Background */
+
+.silver-badge{
+    background:none;
+    padding:0;
+    border-radius:0;
+    color:#9ea3a9;
+}
+
+/* Gold */
+
+.gold .card-top{
+    background:#f8efd8;
+}
+
+.gold .card-top i{
+    font-size:68px;
+    color:#d4a615;
+}
+
+/* Premium */
+
+.premium .card-top{
+    background:#f4f4f4;
+}
+
+.premium .card-top i{
+    font-size:70px;
+    color:#8b6543;
+}
+
+/* CARD CONTENT */
+
+.card-content{
+    padding:35px;
+}
+
+.card-content h4{
+    text-align:center;
+    font-size:42px;
+    margin-bottom:15px;
+    color:#213022;
+}
+
+.card-content h5{
+    text-align:center;
+    font-size:50px;
+    color:#176d2f;
+    margin-bottom:20px;
+}
+
+.card-content h5 span{
+    font-size:22px;
+    color:#666;
+    font-weight:400;
+}
+.point-box{
+    background:#f7f0df;
+    color:#9b7a21;
+    padding:14px;
+    border-radius:30px;
+    text-align:center;
+    font-weight:600;
+    margin-bottom:28px;
+}
+
+.gold-box{
+    background:#f8efd8;
+}
+
+/* LIST */
+
+.card-content ul{
+    padding-left:20px;
+}
+
+.card-content li{
+    margin-bottom:12px;
+    color:#555;
+    line-height:1.5;
+}
+
+/* BUTTON */
+
+.card button{
+    margin-top:30px;
+    width:100%;
+    border:none;
+    background:#176d2f;
+    color:white;
+    padding:15px;
+    border-radius:35px;
+    font-size:17px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#104b20;
+    transform:scale(1.03);
+}
+
+/* TAG */
+
+.tag{
+    display:inline-block;
+    background:#d9a419;
+    color:#000;
+    padding:8px 18px;
+    border-radius:25px;
+    font-size:14px;
+    margin-bottom:20px;
+}
+
+/* =======================
+      REWARD SECTION
+======================= */
+
+.rewards{
+    width:82%;
+    margin:40px auto;
+    padding:50px;
+    background:linear-gradient(135deg,#165926,#497842);
+    border-radius:28px;
+    color:white;
+    text-align:center;
+}
+
+.rewards i{
+    font-size:42px;
+    margin-bottom:18px;
+}
+
+.rewards h2{
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.rewards p{
+    font-size:18px;
+    color:#e5e5e5;
+    line-height:1.6;
+    margin-bottom:40px;
+}
+
+.pts{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.pts div{
+    min-width:180px;
+}
+
+.pts b{
+    display:block;
+    font-size:34px;
+    margin-bottom:10px;
+}
+
+.pts span{
+    color:#f2f2f2;
+}
+
+
+
+.refer{
+    width:82%;
+    margin:50px auto 80px;
+    background:white;
+    border-radius:28px;
+    padding:50px;
+    text-align:center;
+}
+
+.refer h2{
+    font-size:38px;
+    margin-bottom:12px;
+}
+
+.refer p{
+    color:#666;
+    margin-bottom:40px;
+    font-size:18px;
+}
+
+.boxes{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin-bottom:35px;
+}
+
+.boxes div{
+    background:#f7f3e8;
+    padding:35px 70px;
+    border-radius:20px;
+    font-size:22px;
+    font-weight:600;
+    color:#176d2f;
+    transition:.3s;
+}
+
+.boxes div:hover{
+    transform:translateY(-5px);
+}
+
+.refer-btn{
+    border:none;
+    background:#176d2f;
+    color:white;
+    padding:16px 45px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:17px;
+    transition:.3s;
+}
+
+.refer-btn:hover{
+    background:#104b20;
+    transform:scale(1.05);
+}
+
+
+
+@media(max-width:992px){
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.card{
+    width:330px;
+}
+
+.rewards,
+.refer{
+    width:92%;
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.plans{
+    gap:25px;
+}
+
+.card{
+    width:100%;
+    max-width:380px;
+}
+
+.pts{
+    flex-direction:column;
+}
+
+.boxes{
+    flex-direction:column;
+}
+
+.boxes div{
+    width:100%;
+}
+
+}
