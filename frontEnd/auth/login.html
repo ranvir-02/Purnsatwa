@@ -1,16 +1,21 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Login | PURNASATWA</title>
 
+    <!-- Auth CSS -->
     <link rel="stylesheet" href="css/auth.css">
 
+    <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
+    <!-- Font Awesome -->
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
@@ -19,29 +24,31 @@
 
     <!-- Background Video -->
     <video class="bg-video" autoplay muted loop playsinline>
-        <source src="video/bg-video.mp4" type="video/mp4">
+        <source src="../video/bg-video.mp4" type="video/mp4">
     </video>
 
     <div class="overlay"></div>
 
-    <main class="auth-wrapper">
+    <!-- Header -->
+    <div id="header"></div>
 
-        <!-- Logo -->
-        <div class="brand">
-            <img src="images/logo.png.jpeg" alt="Logo">
-            <div>
-                <h2>PURNASATWA</h2>
-                <p>Pure Dairy, Pure Health</p>
-            </div>
-        </div>
+    <main class="auth-container">
 
-        <!-- Login Card -->
         <section class="auth-card">
 
-            <h1>Welcome Back</h1>
-            <p class="subtitle">
-                Sign in to continue to your account
-            </p>
+            <div class="brand">
+                <img src="../images/logo.png.jpeg" alt="PURNASATWA Logo">
+
+                <div>
+                    <h2>PURNASATWA</h2>
+                    <p>Pure Dairy, Pure Health</p>
+                </div>
+            </div>
+
+            <div class="title">
+                <h1>Welcome Back</h1>
+                <p>Sign in to continue your account.</p>
+            </div>
 
             <form id="loginForm">
 
@@ -51,7 +58,8 @@
                     <div class="input-box">
                         <i class="fa-regular fa-envelope"></i>
 
-                        <input type="email"
+                        <input
+                            type="email"
                             id="email"
                             placeholder="Enter your email"
                             required>
@@ -69,14 +77,17 @@
                     </div>
 
                     <div class="input-box">
+
                         <i class="fa-solid fa-lock"></i>
 
-                        <input type="password"
+                        <input
+                            type="password"
                             id="password"
                             placeholder="Enter password"
                             required>
 
                         <i class="fa-regular fa-eye toggle-password"></i>
+
                     </div>
 
                 </div>
@@ -103,8 +114,11 @@
             </div>
 
             <button class="google-btn">
+
                 <i class="fa-brands fa-google"></i>
+
                 Continue with Google
+
             </button>
 
             <p class="bottom-text">
@@ -116,12 +130,17 @@
 
     </main>
 
-    <footer>
-        © 2026 PURNASATWA Dairy Production. All Rights Reserved.
-    </footer>
+    <!-- Footer -->
+    <div id="footer"></div>
 
+    <!-- Header & Footer Loader -->
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+
+    <!-- Auth JS -->
     <script src="js/auth.js"></script>
 
 </body>
 
 </html>
+```
