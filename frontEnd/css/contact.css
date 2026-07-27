@@ -432,7 +432,18 @@ section{
 }
 
 .instagram-bg i{
-    color:#ff2f78;
+    font-size:38px;
+    background:linear-gradient(
+        45deg,
+        #feda75,
+        #fa7e1e,
+        #d62976,
+        #962fbf,
+        #4f5bd5
+    );
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
 }
 
 .facebook-bg{
@@ -440,7 +451,8 @@ section{
 }
 
 .facebook-bg i{
-    color:#1877f2;
+    color:#1877F2;
+    font-size:38px;   
 }
 
 .youtube-bg{
@@ -449,6 +461,7 @@ section{
 
 .youtube-bg i{
     color:#ff0000;
+    font-size:36px;
 }
 
 .whatsapp-bg{
@@ -457,6 +470,7 @@ section{
 
 .whatsapp-bg i{
     color:#25D366;
+    font-size:38px;
 }
 
 /* Text */
